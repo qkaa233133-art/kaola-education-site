@@ -1,0 +1,20 @@
+考啦教育网站交付包
+====================
+
+本压缩包包含：
+1. app/：网站页面和交互源码
+2. public/：教师照片、微信二维码、分享图片等全部素材
+3. dist/：当前已构建的部署文件
+4. package.json 与 package-lock.json：项目依赖和运行脚本
+5. 其余配置、测试与服务器适配文件
+
+Node.js 服务器部署：
+1. 安装 Node.js 20 或更高版本
+2. 在解压目录运行 npm ci
+3. 运行 npm run build
+4. 运行 npm run start
+
+说明：
+- 不要只上传 app 文件夹，public 文件夹必须一起上传，否则图片和二维码会丢失。
+- 如果服务器只支持纯静态 HTML，不能直接运行本项目，需要先由服务商提供 Node.js 或 Cloudflare Workers 部署环境。
+- 当前线上路径包括：/（主界面）、/kaola（详情页）、/assessment（免费测评）。
